@@ -1,0 +1,12 @@
+.class{
+    text-align: center;
+}
+.room{
+    margin: 10px;
+}
+.dark{
+background-color: blue;
+}
+.bright{
+    background-color: cadetblue;
+}

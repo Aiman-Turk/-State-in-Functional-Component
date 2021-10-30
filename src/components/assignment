@@ -1,0 +1,109 @@
+import { useState } from "react"
+import './room.css';
+////////////////////////////////////////////////////////Function
+// function Func1(){
+//     return(
+//         <>
+//         Hello
+//         </>
+//     )
+// }
+// export default Func1
+/////////////////////////////////////////////////////arrow function
+// const Func2=()=>{ 
+// return(<>
+// <p>Hello world!</p>
+// </>)
+// }
+// export default Func2
+///////////////////////////////////////////////////////////props
+// const Func2=(props)=>{ 
+//     return(<>
+//     <p>Hello world!{props.name}</p>
+//     <p>Hello world!{props.num}</p>
+//     </>)
+//     }
+//     export default Func2
+
+
+// const Func2=(props)=>{ 
+//         return(<>
+//         <p>Hello world!{props.name}</p>
+//         <p>Hello world!{props.num}</p>
+//         <div>
+//             {props.arr.map(
+//                 (item,index)=>
+//             (<h1>{item}</h1>)
+//             )}
+//         </div>
+//         </>)
+//         }
+//         export default Func2
+
+//////////////////////////////////////////////////////////////State
+// const Func2=(props)=>{ 
+//     let num2=20
+//     return(
+//     <>
+//     <p>{props.name}</p>
+//     <p>{props.num}</p>
+//     <p>{num2}</p>
+
+//     </>)
+//     }
+//     export default Func2
+///////////////////////////////////////////HOOKS
+
+// const Func2=(props)=>{ 
+//     const [num,setNum]=useState("My name is Aiman and complete name is..................");
+
+
+//         return(
+//         <>
+//         <p>{props.name}</p>
+//         <p>{props.num}</p>
+//         <p>{num}</p>
+//         <button onClick={()=>setNum("My name is Aiman  and complete name is Aiman Airf")}>what's my full name</button>
+//                     </>)
+//         }
+//         export default Func2
+
+////////////////////////////////////////////////////
+// const Func2 = () => {
+
+//     const [isLit, setLit] = useState(true)
+//     const myclass =  isLit? "bright": "dark" 
+
+//     return (
+       
+//         <div className={`room ${myclass}`}>
+//              The room is {isLit?"bright":"dark"}
+//             <button onClick={() => setLit(!isLit)}>ON / OFF</button>
+//             </div>)
+//             }
+//     export default Func2
+
+            //////////////////////////////////////////
+            {/* // const Func2 = () => {
+
+    let [Num, setNum] = useState(0)
+    return (
+        <>
+            <h1>{Num}</h1>
+            <button onClick={() => setNum(++Num)}>+</button>
+            <button onClick={() => setNum(--Num)}>-</button>
+        </>)
+}
+export default Func2 */}
+/////////////////////////////////////////////////
+ const Func2 = () => {
+
+    let [Temperature, setTemperature] = useState(0)
+    return (
+        <>
+            <h1>Temperature is : {Temperature} C°</h1>
+            <button onClick={() => setTemperature(++Temperature)}>Temp +</button>
+            <button onClick={() => setTemperature(--Temperature)}>Temp -</button>
+        </>)
+}
+export default Func2 
